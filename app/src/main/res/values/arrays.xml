@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scope">
+        <item>com.microsoft.windows.userapp</item>
+    </string-array>
+
+    <string-array name="default_block_redirect_actions">
+        <item>android.settings.ACCESSIBILITY_SETTINGS</item>
+    </string-array>
+</resources>

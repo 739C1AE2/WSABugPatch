@@ -1,0 +1,72 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/header_ime">
+
+        <SwitchPreferenceCompat
+            app:key="fix_ime_position"
+            app:summary="@string/summary_fix_ime_position"
+            app:title="@string/title_fix_ime_position" />
+
+        <com.github739c1ae2.wsapatch.preference.IntegerEditTextPreference
+            app:defaultValue="31"
+            app:dependency="fix_ime_position"
+            app:key="ime_offset_y"
+            app:maxValue="200"
+            app:minValue="0"
+            app:summary="@string/summary_ime_offset_y"
+            app:title="@string/title_ime_offset_y" />
+
+        <SwitchPreferenceCompat
+            app:key="ime_replace_invalid_check"
+            app:summaryOff="@string/summary_off_ime_replace_invalid_check"
+            app:summaryOn="@string/summary_on_ime_replace_invalid_check"
+            app:title="@string/title_ime_replace_invalid_check" />
+
+        <SwitchPreferenceCompat
+            app:key="ime_request_cursor_updates_fallback"
+            app:summary="@string/summary_ime_request_cursor_updates_fallback"
+            app:title="@string/title_ime_request_cursor_updates_fallback" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/header_overlay_window">
+
+        <SwitchPreferenceCompat
+            app:key="fix_overlay_window_drag"
+            app:summary="@string/summary_fix_overlay_window_drag"
+            app:title="@string/title_fix_overlay_window_drag" />
+
+        <com.github739c1ae2.wsapatch.preference.ApplicationSelectPreference
+            app:key="overlay_window_scope"
+            app:summary="@string/summary_overlay_window_scope"
+            app:title="@string/title_overlay_window_scope" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/header_redirection">
+        <SwitchPreferenceCompat
+            app:key="block_setting_redirect"
+            app:summary="@string/summary_block_setting_redirect"
+            app:title="@string/title_block_setting_redirect" />
+        <com.github739c1ae2.wsapatch.preference.StringSetPreference
+            app:defaultValue="@array/default_block_redirect_actions"
+            app:key="block_setting_redirect_actions"
+            app:summary="@string/summary_block_setting_redirect_actions"
+            app:title="@string/title_block_setting_redirect_actions" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/header_others">
+
+        <SwitchPreferenceCompat
+            app:key="content_description_as_tooltip"
+            app:summary="@string/summary_content_description_as_tooltip"
+            app:title="@string/title_content_description_as_tooltip" />
+
+        <com.github739c1ae2.wsapatch.preference.ApplicationSelectPreference
+            app:key="content_description_as_tooltip_scope"
+            app:summary="@string/summary_content_description_as_tooltip_scope"
+            app:title="@string/title_content_description_as_tooltip_scope" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

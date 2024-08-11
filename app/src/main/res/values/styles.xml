@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialSwitchPreferenceCompat" parent="@style/Preference.SwitchPreferenceCompat.Material">
+        <item name="widgetLayout">@layout/preference_widget_material_switch</item>
+    </style>
+
+    <style name="IntegerEditTextPreferenceStyle" parent="Preference.DialogPreference.Material">
+        <item name="dialogLayout">@layout/preference_edit_text</item>
+    </style>
+
+    <style name="ActivityPreferenceStyle" parent="Preference.Material">
+        <item name="widgetLayout">@layout/preference_widget_activity</item>
+    </style>
+</resources>
